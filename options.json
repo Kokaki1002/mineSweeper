@@ -1,0 +1,17 @@
+{
+    "easy": {
+        "width": 10,
+        "height": 10,
+        "mines": 15
+    },
+    "normal": {
+        "width": 15,
+        "height": 15,
+        "mines": 30
+    },
+    "hard": {
+        "width": 25,
+        "height": 15,
+        "mines": 60
+    }
+}

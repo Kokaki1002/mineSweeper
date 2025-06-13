@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>課題制作</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id = "side">
+        <h3 id = "title">MineSweeper</h3>
+        <div>
+            <small>クリックでセルをオープン</small><br>
+            <small>右クリックでセルに旗を立てます</small><br>
+            <small>ダブルクリックで一括オープン</small><br>
+        </div>
+        <br>
+        <div id = "options">
+            <small>いずれかのセルをクリックでスタート</small>
+            <br>
+            <label>
+                難易度選択：
+                <select class = "levelSelector">
+                    <option value = "easy" name = "mode">easy</option>
+                    <option value = "normal" name = "mode">normal</option>
+                    <option value = "hard" name = "mode">hard</option>
+                </select>
+            </label>
+            <p>カスタム</p>
+            <p>
+                <label>
+                    高さ(推奨：10~15)
+                    <input type = "number" class = "height">
+                </label>
+            </p>
+            <p>
+                <label>
+                    幅  (推奨：10~30)
+                    <input type = "number" class = "width">
+                </label>
+            </p>
+            <p>
+                <label>
+                    爆弾数(推奨：10~)
+                    <input type = "number" class = "mines">
+                </label>
+            </p>
+        </div>
+        <div id = "btn"></div>
+    </div>
+
+    <div id = "main">
+        <table>
+            <!--ここにjsで盤面を描画する-->
+            <tbody id = "gameField" onContextmenu="return false;">
+            </tbody>
+        </table>
+    </div>
+
+    <!--ローカルサーバーで起動する場合はmain.js-->
+    <script src="./main.js"></script>
+    <!--サーバーなしで起動する場合はこちら-->
+    <!--<script src="./dontUseJson.js"></script>-->
+</body>
+
+</html>

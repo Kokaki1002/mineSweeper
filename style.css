@@ -1,0 +1,31 @@
+#side {
+    float: left;
+    width: 20%;
+}
+
+#main {
+    float: right;
+    width: 80%;
+}
+
+table {
+    margin: 30px;
+    text-align: center;
+    border: 1px solid;
+}
+
+table tr td {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    border: 1px solid;
+}
+
+.empty {
+    height: 20px;
+    width: 20px;
+}
+
+#gameField {
+    background-color: rgb(210, 210, 210);
+}
